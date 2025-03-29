@@ -11,12 +11,14 @@
       let
         pkgs = import nixpkgs { inherit system; };
       in
-      {
+      rec {
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
             go
           ];
         };
+        packages.default = pkgs.callPackage ./default.nix { };
+        apps.default = utils.lib.mkApp { drv = packages.default; };
       }
     );
 }
