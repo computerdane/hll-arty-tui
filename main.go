@@ -48,6 +48,7 @@ func main() {
 	inputArea.AddChild(inputBorders.Outer)
 
 	input := components.NewInput()
+	tui.CursorOwner = input.Outer
 	inputBorders.Inner.AddChild(input.Outer)
 
 	angleBorders := components.NewBorders()
@@ -89,7 +90,7 @@ func main() {
 	tui.Screen.Render()
 
 	tui.ShowCursor()
-	input.Focus()
+	input.UpdateCursorPos()
 
 	for {
 		char, key, err := keyboard.GetKey()
@@ -137,7 +138,7 @@ func main() {
 		}
 
 		input.SetContent(content)
-		input.Focus()
+		input.UpdateCursorPos()
 		go input.Outer.Render()
 
 	UpdateAngle:

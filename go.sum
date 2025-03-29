@@ -1,9 +1,5 @@
-github.com/computerdane/flextui v0.0.10 h1:C8UwMCo2EmNkbNuYI3cKG0OKzA/CxlLIusIzi6vjU84=
-github.com/computerdane/flextui v0.0.10/go.mod h1:iqa7Jxb7zfaDWekbnvvpM8zWzSxejGu+CSbu18a94cs=
-github.com/computerdane/flextui v0.0.11 h1:2bamt7YdBbWjUqgU3hdnqm60k/hiS4kfdE/SAsx1jFM=
-github.com/computerdane/flextui v0.0.11/go.mod h1:iqa7Jxb7zfaDWekbnvvpM8zWzSxejGu+CSbu18a94cs=
-github.com/computerdane/flextui v0.0.12 h1:zu1Z4AlN2FIf/A9UV5hLoyeTwmnILYUW1WGSAFwlPjM=
-github.com/computerdane/flextui v0.0.12/go.mod h1:iqa7Jxb7zfaDWekbnvvpM8zWzSxejGu+CSbu18a94cs=
+github.com/computerdane/flextui v0.0.14 h1:/BO8RwR63Q4sHL1CQOoFyek/lY1fDXWPyTGJxKjgpXI=
+github.com/computerdane/flextui v0.0.14/go.mod h1:iqa7Jxb7zfaDWekbnvvpM8zWzSxejGu+CSbu18a94cs=
 github.com/computerdane/hll-arty-calc v1.0.2 h1:PPiS8lc4ci0Uz85g96h3GUup9jahVrn78P0AqJJ1VLg=
 github.com/computerdane/hll-arty-calc v1.0.2/go.mod h1:LYRV3duVFP8K8STqgkCITOmvaj3wWW/Hk8+5hz5bki0=
 github.com/eiannone/keyboard v0.0.0-20220611211555-0d226195f203 h1:XBBHcIb256gUJtLmY22n99HaZTz+r2Z51xUPi01m3wg=
