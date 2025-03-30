@@ -101,7 +101,7 @@ func angleCell(dist float64, offset float64) *tui.Component {
 	if offset == 0 {
 		angleContent.SetColorFunc(theme.Angle.Clone().Add(color.Bold).Sprint)
 		offsetContent.SetColorFunc(theme.Dist.Clone().Add(color.Bold).Sprint)
-	} else if math.Abs(offset) > 40 {
+	} else if math.Abs(offset) > 50 {
 		angleContent.SetColorFunc(theme.Angle.Clone().Add(color.Faint).Sprint)
 		offsetContent.SetColorFunc(theme.Offset.Clone().Add(color.Faint).Sprint)
 	} else {
@@ -117,13 +117,15 @@ func angleRow(dist float64) *tui.Component {
 	row.SetLength(3)
 
 	cells := []*tui.Component{
-		angleCell(dist, -60),
-		angleCell(dist, -40),
+		angleCell(dist, -200),
+		angleCell(dist, -100),
+		angleCell(dist, -50),
 		angleCell(dist, -20),
 		angleCell(dist, 0),
 		angleCell(dist, 20),
-		angleCell(dist, 40),
-		angleCell(dist, 60),
+		angleCell(dist, 50),
+		angleCell(dist, 100),
+		angleCell(dist, 200),
 	}
 
 	rowContent := tui.NewComponent()
